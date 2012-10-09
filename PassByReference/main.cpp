@@ -28,6 +28,7 @@ int& foo::operator[](int index){
 int main(){
 	foo f;
 	f[0] = 15;
+	f.operator[](1) = 16;
 	
 	cout << f[0] << endl;
 	cout << f[1] << endl;
